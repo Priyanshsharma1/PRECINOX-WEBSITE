@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Precinox — Precision Quick Release Couplings</title>
+<meta name="description" content="Precinox manufactures ISO-compliant hydraulic, pneumatic, and high-pressure quick release couplings in Vadodara, India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#05307D;
+    --blue-deep:#031D4D;
+    --blue-tint:#EAF0FB;
+    --black:#0A0A0A;
+    --white:#FFFFFF;
+    --grey:#5B6472;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;transition-duration:.001ms!important;} html{scroll-behavior:auto;}}
+  body{margin:0;background:var(--white);color:var(--black);font-family:'IBM Plex Sans',sans-serif;line-height:1.55;}
+  h1,h2,h3{font-family:'Space Grotesk',sans-serif;font-weight:600;margin:0;letter-spacing:-.01em;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:inherit;}
+  :focus-visible{outline:2px solid var(--blue);outline-offset:3px;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+  section{padding:80px 0;}
+  .photo-slot{
+    background:repeating-linear-gradient(45deg,var(--blue-tint),var(--blue-tint) 10px,#fff 10px,#fff 20px);
+    border:1.5px dashed var(--blue);
+    border-radius:2px;
+    display:flex;align-items:center;justify-content:center;
+    color:var(--blue);font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:center;
+    padding:16px;
+  }
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid #E4E7EC;}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:20px 32px;max-width:1180px;margin:0 auto;}
+  .logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;display:flex;align-items:center;gap:10px;}
+  .logo .mono{font-size:11px;color:var(--blue);font-weight:500;letter-spacing:.06em;}
+  .nav-links ul{list-style:none;display:flex;align-items:center;gap:32px;margin:0;padding:0;flex-wrap:wrap;}
+  .nav-links ul a{text-decoration:none;font-size:14px;color:var(--black);font-weight:500;}
+  .nav-links ul a:hover{color:var(--blue);}
+  .nav-links{display:flex;align-items:center;gap:36px;}
+  @media (max-width:800px){.nav-links ul{display:none;}}
+  .nav-cta{background:var(--blue);color:var(--white)!important;text-decoration:none;padding:10px 20px;font-size:13px;font-weight:500;border-radius:2px;}
+  .hero{background:var(--blue);color:var(--white);padding:88px 0;}
+  .hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center;}
+  @media (max-width:900px){.hero-grid{grid-template-columns:1fr;}}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#9FBBEE;display:flex;align-items:center;gap:10px;margin-bottom:20px;}
+  .eyebrow::before{content:'';width:24px;height:1px;background:#9FBBEE;}
+  .hero h1{font-size:clamp(34px,4.6vw,54px);line-height:1.06;}
+  .hero p{margin-top:22px;font-size:18px;color:#CBDAF4;max-width:46ch;}
+  .hero-ctas{margin-top:32px;display:flex;gap:16px;flex-wrap:wrap;}
+  .btn-primary{background:var(--white);color:var(--blue);text-decoration:none;padding:14px 26px;font-size:14px;font-weight:600;border-radius:2px;display:inline-flex;gap:8px;}
+  .btn-secondary{text-decoration:none;padding:14px 26px;font-size:14px;font-weight:500;border-radius:2px;border:1px solid #6D8DC4;color:var(--white);}
+  .hero .photo-slot{aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#0A2F73,#0A2F73 10px,#052667 10px,#052667 20px);border-color:#9FBBEE;color:#CBDAF4;}
+  .certs{border-bottom:1px solid #E4E7EC;padding:22px 0;}
+  .certs-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;}
+  .certs-label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--grey);}
+  .certs-list{display:flex;gap:28px;flex-wrap:wrap;}
+  .cert-tag{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--blue);padding:6px 12px;border:1px solid var(--blue);border-radius:2px;}
+  .section-head{max-width:640px;margin-bottom:48px;}
+  .section-head .eyebrow{color:var(--blue);}
+  .section-head .eyebrow::before{background:var(--blue);}
+  .section-head h2{font-size:clamp(26px,3vw,36px);}
+  .section-head p{margin-top:14px;color:var(--grey);font-size:16px;}
+  .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#E4E7EC;border:1px solid #E4E7EC;}
+  @media (max-width:800px){.cap-grid{grid-template-columns:1fr;}}
+  .cap-card{background:var(--white);padding:28px;}
+  .cap-card .photo-slot{height:140px;margin-bottom:18px;font-size:11px;}
+  .cap-num{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--blue);margin-bottom:10px;}
+  .cap-card h3{font-size:19px;margin-bottom:8px;}
+  .cap-card p{color:var(--grey);font-size:14.5px;margin:0;}
+  .industries{background:var(--black);color:var(--white);}
+  .industries .section-head p{color:#A6A6A6;}
+  .industries .eyebrow{color:#6D8DC4;}
+  .industries .eyebrow::before{background:#6D8DC4;}
+  .ind-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  @media (max-width:800px){.ind-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:520px){.ind-grid{grid-template-columns:1fr;}}
+  .ind-card{border:1px solid #2A2A2A;border-radius:2px;padding:20px;}
+  .ind-card .photo-slot{height:90px;margin-bottom:14px;font-size:10px;border-color:#6D8DC4;background:repeating-linear-gradient(45deg,#111,#111 10px,#0a0a0a 10px,#0a0a0a 20px);color:#6D8DC4;overflow:hidden;padding:0;}
+  .ind-card img{width:100%;height:100%;object-fit:cover;display:block;}
+  .ind-tag{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#6D8DC4;display:block;margin-bottom:8px;}
+  .ind-card h3{font-size:16px;font-weight:600;}
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+  @media (max-width:850px){.why-grid{grid-template-columns:1fr;}}
+  .why-list{list-style:none;margin:0;padding:0;}
+  .why-list li{display:grid;grid-template-columns:auto 1fr;gap:18px;padding:20px 0;border-top:1px solid #E4E7EC;}
+  .why-list li:last-child{border-bottom:1px solid #E4E7EC;}
+  .why-mark{font-family:'IBM Plex Mono',monospace;color:var(--blue);font-size:13px;padding-top:2px;}
+  .why-list h3{font-size:16px;margin-bottom:6px;}
+  .why-list p{margin:0;color:var(--grey);font-size:14.5px;}
+  .field-card{border:1px solid #E4E7EC;border-radius:2px;padding:28px;position:sticky;top:100px;}
+  .field-card .photo-slot{height:160px;margin-bottom:18px;font-size:11px;}
+  .field-card h3{font-size:21px;margin-bottom:12px;}
+  .field-card p{color:var(--grey);font-size:15px;margin-bottom:16px;}
+  .field-loc{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--blue);border-top:1px dashed #E4E7EC;padding-top:14px;}
+  .catalog{background:var(--blue-tint);}
+  .catalog-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:48px;align-items:center;}
+  @media (max-width:850px){.catalog-grid{grid-template-columns:1fr;}}
+  .catalog-cover.photo-slot{aspect-ratio:0.77;font-size:11px;}
+  .catalog-list{list-style:none;margin:20px 0 28px;padding:0;}
+  .catalog-list li{padding:10px 0;border-top:1px dashed #C7D4EC;font-size:14.5px;color:var(--grey);}
+  .catalog-list li:last-child{border-bottom:1px dashed #C7D4EC;}
+  .catalog-list b{color:var(--black);}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;}
+  @media (max-width:850px){.contact-grid{grid-template-columns:1fr;}}
+  form{display:flex;flex-direction:column;gap:16px;}
+  label{font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--grey);margin-bottom:6px;display:block;}
+  input,textarea,select{width:100%;border:1px solid #D6DAE1;background:var(--white);padding:12px 14px;font-family:'IBM Plex Sans',sans-serif;font-size:14px;color:var(--black);border-radius:2px;}
+  input:focus,textarea:focus,select:focus{outline:2px solid var(--blue);outline-offset:1px;}
+  textarea{resize:vertical;min-height:110px;}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:520px){.field-row{grid-template-columns:1fr;}}
+  .submit-btn{background:var(--blue);color:var(--white);border:none;cursor:pointer;margin-top:6px;align-self:flex-start;padding:14px 26px;font-size:14px;font-weight:600;border-radius:2px;}
+  footer{background:var(--black);color:#A6A6A6;padding:32px 0;}
+  .footer-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:13px;}
+  .footer-row .mono{color:#6D8DC4;}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="logo">
+      <img src="images/LOGO.png" alt="Precinox logo" style="height:78px;width:auto;border-radius:2px;object-fit:contain;display:block;">
+    </div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="#capabilities">Capabilities</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#catalog">Catalog</a></li>
+        <li><a href="#field-service">Field Service</a></li>
+      </ul>
+      <a class="nav-cta" href="#contact">Request Quote</a>
+    </div>
+  </div>
+</header>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow"> Surat, India</div>
+      <h1>Couplings engineered for connections where failure isn't an option.</h1>
+      <p>Precinox designs and manufactures leak-free, reliable and high-pressure quick release couplings in-house — from seal to shell.</p>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="#contact">Request a Quote →</a>
+        <a class="btn-secondary" href="#catalog">View Catalog</a>
+      </div>
+    </div>
+    <div class="photo-slot" style="aspect-ratio:4/3;overflow:hidden;padding:0;">
+      <img src="images/flat-face.jpeg" alt="Precinox quick release coupling" style="width:100%;height:100%;object-fit:cover;display:block;" loading="eager">
+    </div>
+  </div>
+</section>
+<div class="certs">
+  <div class="wrap certs-row">
+    <span class="certs-label">Standards Compliance</span>
+    <div class="certs-list">
+      <span class="cert-tag">ISO 9001:2015</span>
+      <span class="cert-tag">ISO 7241</span>
+      <span class="cert-tag">ISO 16028</span>
+      <span class="cert-tag">EN ISO 21287</span>
+    </div>
+  </div>
+</div>
+<section id="capabilities">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Capabilities</div>
+      <h2>Every stage stays under one roof.</h2>
+      <p>No outsourced machining, no third-party seal supplier — cut, molded, and tested on-site.</p>
+    </div>
+    <div class="cap-grid">
+      <div class="cap-card">
+        <!-- PHOTO: CNC machining floor/part in progress. 800x600px, JPG/WEBP -->
+        <div class="photo-slot">CNC PROCESS PHOTO · 800x600px</div>
+        <div class="cap-num">01 / MACHINING</div>
+        <h3>In-house CNC Machining</h3>
+        <p>Body, poppet, and sleeve components machined to ISO tolerance in-house.</p>
+      </div>
+      <div class="cap-card">
+        <!-- PHOTO: seal molding / elastomer parts tray. 800x600px, JPG/WEBP -->
+        <div class="photo-slot">SEAL PROCESS PHOTO · 800x600px</div>
+        <div class="cap-num">02 / SEALING</div>
+        <h3>Elastomeric Seal Manufacturing</h3>
+        <p>Seals compounded and molded in-house for fluid and chemical compatibility.</p>
+      </div>
+      <div class="cap-card">
+        <!-- PHOTO: engineer at CAD/SolidWorks screen or drawing review. 800x600px, JPG/WEBP -->
+        <div class="photo-slot">ENGINEERING PHOTO · 800x600px</div>
+        <div class="cap-num">03 / ENGINEERING</div>
+        <h3>Custom Application Engineering</h3>
+        <p>Non-standard port configurations and interchange profiles engineered to fit your fleet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="industries" class="industries">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Industries Served</div>
+      <h2>Built for plants where downtime is the real cost.</h2>
+    </div>
+    <div class="ind-grid">
+      <!-- PHOTO x6: one per industry below, 500x300px, JPG/WEBP, in-situ application shot -->
+      <div class="ind-card"><div class="photo-slot"><img src="images/flat-face.jpeg" alt="Automotive EOL testing application" loading="lazy" decoding="async"></div><span class="ind-tag">01</span><h3>Automotive EOL Testing</h3></div>
+      <div class="ind-card"><div class="photo-slot"><img src="images/industry-card.svg" alt="HVAC systems application" loading="lazy" decoding="async"></div><span class="ind-tag">02</span><h3>HVAC Systems</h3></div>
+      <div class="ind-card"><div class="photo-slot"><img src="images/industry-card.svg" alt="Pharma CIP SIP application" loading="lazy" decoding="async"></div><span class="ind-tag">03</span><h3>Pharma CIP / SIP</h3></div>
+      <div class="ind-card"><div class="photo-slot"><img src="images/industry-card.svg" alt="EV battery manufacturing application" loading="lazy" decoding="async"></div><span class="ind-tag">04</span><h3>EV Battery Manufacturing</h3></div>
+      <div class="ind-card"><div class="photo-slot"><img src="images/industry-card.svg" alt="Petrochemical application" loading="lazy" decoding="async"></div><span class="ind-tag">05</span><h3>Petrochemical</h3></div>
+      <div class="ind-card"><div class="photo-slot"><img src="images/industry-card.svg" alt="Defence application" loading="lazy" decoding="async"></div><span class="ind-tag">06</span><h3>Defence</h3></div>
+    </div>
+  </div>
+</section>
+<!-- CATALOG SECTION: replace cover photo-slot with an <img> of the catalog's front page (850x1100px, portrait/A4 ratio, JPG). Replace href="#" below with actual PDF path, e.g. href="catalog/precinox-catalog-2026.pdf" -->
+<section id="catalog" class="catalog">
+  <div class="wrap catalog-grid">
+    <div class="photo-slot catalog-cover">CATALOG COVER<br>850x1100px · A4 portrait JPG</div>
+    <div>
+      <div class="section-head">
+        <div class="eyebrow">Product Catalog</div>
+        <h2>Full specification catalog, one download.</h2>
+        <p>Dimensions, pressure ratings, and OEM cross-reference tables for every series.</p>
+      </div>
+      <ul class="catalog-list">
+        <li><b>HVAC Series</b> — ISO 7241, up to 150 bar</li>
+        <li><b>Pneumatic Series</b> — ISO 16028 compliant</li>
+        <li><b>High-Pressure Series</b> — EN ISO 21287</li>
+      </ul>
+      <!-- CATALOG FILE: place PDF at /catalog/precinox-catalog-2026.pdf and update href -->
+      <a class="btn-primary" style="background:var(--blue);color:var(--white);" href="#" download>Download Catalog PDF →</a>
+    </div>
+  </div>
+</section>
+<section id="field-service">
+  <div class="wrap why-grid">
+    <div>
+      <div class="section-head" style="margin-bottom:28px;">
+        <div class="eyebrow">Why Precinox</div>
+        <h2>The difference is what happens after the sale.</h2>
+      </div>
+      <ul class="why-list">
+        <li><span class="why-mark">→</span><div><h3>On-site diagnostics</h3><p>We visit your facility for coupling failure diagnostics and fit assessments.</p></div></li>
+        <li><span class="why-mark">→</span><div><h3>OEM interchangeability</h3><p>Cross-reference engineering for drop-in replacement against your existing fittings.</p></div></li>
+        <li><span class="why-mark">→</span><div><h3>Regional response time</h3><p>Positioned near the Dahej–Jamnagar industrial belt for faster turnaround.</p></div></li>
+      </ul>
+    </div>
+    <div class="field-card">
+      <!-- PHOTO: field engineer on-site with diagnostic equipment. 1000x700px, JPG/WEBP -->
+      <div class="photo-slot">FIELD SERVICE PHOTO · 1000x700px</div>
+      <div class="eyebrow">On-Site Field Service</div>
+      <h3>We come to the plant floor.</h3>
+      <p>Portable hydraulic diagnostics and fit engineering performed at your facility.</p>
+      <div class="field-loc">BASE: SURAT, GUJARAT · SERVICE: ALL OVER INDIA</div>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="section-head">
+        <div class="eyebrow">Request a Quote</div>
+        <h2>Tell us the application. We'll tell you the fit.</h2>
+        <p>Send operating pressure, media, and existing coupling reference — we'll respond with a spec match.</p>
+      </div>
+    </div>
+    <!-- FORM: replace onsubmit with a real action, e.g. Formspree: <form action="https://formspree.io/f/YOUR_ID" method="POST"> -->
+    <form onsubmit="event.preventDefault(); alert('Wire this to Formspree or your form endpoint before going live.');">
+      <div class="field-row">
+        <div><label for="name">Full name</label><input id="name" type="text" required></div>
+        <div><label for="company">Company</label><input id="company" type="text" required></div>
+      </div>
+      <div class="field-row">
+        <div><label for="email">Email</label><input id="email" type="email" required></div>
+        <div><label for="industry">Industry</label>
+          <select id="industry">
+            <option>Automotive EOL Testing</option><option>HVAC</option><option>Pharma CIP/SIP</option>
+            <option>EV Battery Manufacturing</option><option>Petrochemical</option><option>Defence</option><option>Data Centres and Semiconductors</option><option>Other</option>
+          </select>
+        </div>
+      </div>
+      <div><label for="details">Application details</label><textarea id="details" placeholder="Operating pressure, media, port size, existing brand/model..."></textarea></div>
+      <button class="submit-btn" type="submit">Submit Request →</button>
+    </form>
+  </div>
+</section>
+<footer>
+  <div class="wrap footer-row">
+    <span>© 2026 Precinox. Surat, India.</span>
+  </div>
+</footer>
+</body>
+</html>

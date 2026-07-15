@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300" role="img" aria-label="Industrial application placeholder">
+  <rect width="500" height="300" rx="8" fill="#0F1F3D"/>
+  <rect x="32" y="32" width="436" height="236" rx="6" fill="#153A6B"/>
+  <rect x="64" y="76" width="158" height="86" rx="4" fill="#6D8DC4" opacity="0.85"/>
+  <rect x="250" y="76" width="184" height="24" rx="4" fill="#EAF0FB" opacity="0.95"/>
+  <rect x="250" y="112" width="142" height="18" rx="4" fill="#EAF0FB" opacity="0.75"/>
+  <rect x="64" y="184" width="280" height="18" rx="4" fill="#EAF0FB" opacity="0.7"/>
+  <rect x="64" y="214" width="220" height="18" rx="4" fill="#EAF0FB" opacity="0.55"/>
+  <circle cx="380" cy="200" r="34" fill="#FFFFFF" opacity="0.18"/>
+</svg>
